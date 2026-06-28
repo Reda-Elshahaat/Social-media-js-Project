@@ -19,7 +19,6 @@ axios.get(`https://tarmeezacademy.com/api/v1/users/${id}`)
     console.log(user)
         document.getElementById("main-info-email").innerHTML  = user.email
         document.getElementById("main-info-name").innerHTML  = user.name
-        document.getElementById("posts-name").innerHTML  = user.username
         document.getElementById("main-info-username").innerHTML  = user.username
         document.getElementById("main-info-image").src  = user.profile_image
        //post  comments
@@ -66,7 +65,9 @@ function getPosts(){
                             ${editBtnContent}
                         </div>
                         <div class="card-body" onclick="postClicked(${post.id})" style="cursor:pointer">
-                            <img src="${post.image}" class="w-100" alt="" >
+                            <div class="w-50 mx-auto text-center">
+                                <img src="${post.image}" class="w-100 " style="border-radius: 10px ; height: 200px;" alt="this post without image" >
+                            </div> 
                             <p class="mt-2" style="color: grey;">${post.created_at}</p>
                             <h5>${postTitle}</h5>
                             <p>${post.body}</p>

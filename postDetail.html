@@ -10,7 +10,7 @@
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <style>
             body{
-                background: #f0ecff;
+                background: #cccc;
             }
             .card {
                 margin-bottom: 30px;
@@ -31,15 +31,15 @@
 </head>
 <body>
     <!-- loader html  -->
-    <div id="loader" style="background: #615d5d;  position: fixed;top: 0px; bottom: 0px; left:0px; right: 0px; margin: auto auto; display: flex; justify-content: center; align-items: center; z-index: 9999; width: 80px;height: 80px;border-radius: 70px;">
+    <!-- <div id="loader" style="background: #615d5d;  position: fixed;top: 0px; bottom: 0px; left:0px; right: 0px; margin: auto auto; display: flex; justify-content: center; align-items: center; z-index: 9999; width: 80px;height: 80px;border-radius: 70px;">
         <div class="lds-ring"><div></div><div></div><div></div><div></div>
         </div>
-    </div>  
+    </div>   -->
     <!--///// loader html  -->
     <!-- nav bar  -->
-    <div class="container ">
-        <div class="d-flex justify-content-center">    
-            <div class="col-9">
+    <div class=" ">
+      <div class="d-flex justify-content-center">    
+        <div class="col-9">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary shadow rounded pt-4">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="home.html">Alarabawy</a>
@@ -179,82 +179,20 @@
      <!-- main container  -->
     <div class="container " style></div>
      <!--user  posts  -->
-        <div class="row d-flex justify-content-center mt-4">
-            <div class="col-lg-9">
-                <h1>
+        <div class=" mt-4">
+                <h1 class="text-center fw-bold ">
                     <span id="username-span">Solimans s</span>
                     Post
                 </h1>
-            </div>
         </div>
         <!--//// user posts  -->
         <!-- post row  -->
         <div class="row d-flex justify-content-center mt-4" >
             <div class="col-9" id="post">
               <!-- post card  -->
-                <div class="card shadow-lg">
-                    <div class="card-header">
-                        <img src="image/ابوتريكة1.webp" class="rounded-circle border border-2" style="width: 50px; height: 50px;">
-                        <b>@Trika</b>
-                    </div>
-                    <div class="card-body" >
-                        <img src="place holder/تريكة6.jpg" class="w-100" alt="" >
-                        <p class="mt-2" style="color: grey;">2 minutes ago</p>
-                        <h5>Hello world</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aliquid vero!</p>
-                        <hr>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-                            </svg>
-                            <i class="bi bi-pen-fill"></i>
-                            <span>(3) Comments</span>
-                        </div>
-                    </div>
-
-                    <!-- comments  -->
-                    <div id="comments">
-                        <!--      comment  -->
-                        <div class="p-3" style="background-color: rgb(228, 227, 227);">
-                            <!-- profile img & username   -->
-                            <div>
-                              <img src="image/images (3).jfif" class="rounded-circle" style="width: 40px;height: 40px;" alt="">
-                              <b>@reza22</b>
-                            </div>
-                            <!-- ///profile img & username   -->
-                            <!-- comment body  -->
-                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum ab quae.</div>
-                            <!--////comment body  -->
-                        </div>
-                        <!--     ////comment  -->
-                        <!--      comment  -->
-                        <div class="p-3" style="background-color: rgb(228, 227, 227);">
-                          <!-- profile img & username   -->
-                          <div>
-                            <img src="image/images (3).jfif" class="rounded-circle" style="width: 40px;height: 40px;" alt="">
-                            <b>@reza22</b>
-                          </div>
-                          <!-- ///profile img & username   -->
-                          <!-- comment body  -->
-                          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum ab quae.</div>
-                          <!--////comment body  -->
-                        </div>
-                        <!--     ////comment  -->
-                        <!--      comment  -->
-                        <div class="p-3" style="background-color: rgb(228, 227, 227);">
-                          <!-- profile img & username   -->
-                          <div>
-                            <img src="image/images (3).jfif" class="rounded-circle" style="width: 40px;height: 40px;" alt="">
-                            <b>@reza22</b>
-                          </div>
-                          <!-- ///profile img & username   -->
-                          <!-- comment body  -->
-                          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nostrum ab quae.</div>
-                          <!--////comment body  -->
-                        </div>
-                        <!--     ////comment  -->
-                    </div>
-                    <!--///////comments  -->
+                <div class="">
+                   
+                    
                 </div>
                 <!--///// post card  -->
             </div>
@@ -313,7 +251,9 @@
                                 <b>@${author.username}</b>
                             </div>
                             <div class="card-body" >
-                                <img src="${post.image}" class="w-100" alt="" >
+                                <div class="w-50 mx-auto text-center">
+                                    <img src="${post.image}" class="w-100 " style="border-radius: 10px ; height: 200px;" alt="this post without image" >
+                                </div> 
                                 <p class="mt-2" style="color: grey;">${post.created_at}</p>
                                 <h5>${postTitle}</h5>
                                 <p>${post.body}</p>
@@ -357,7 +297,8 @@
         }).then((response) => {
           console.log(response)
           getPost()
-          showAlert("the comment create successfully",'success')
+          setTimeout(() => { showAlert("the comment create successfully",'success')},1000)
+         
         }).catch((error) => {
             const errorMessage = error.response.data.message
             showAlert(errorMessage,'danger')

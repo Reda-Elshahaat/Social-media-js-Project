@@ -55,8 +55,10 @@ function getPosts(reload = true , page = 1){
                             </span>
                             ${editBtnContent}
                         </div>
-                        <div class="card-body" onclick="postClicked(${post.id})" style="cursor:pointer">
-                            <img src="${post.image}" class="w-100" alt="" >
+                        <div class="card-body " onclick="postClicked(${post.id})" style="cursor:pointer">
+                            <div class="w-50 mx-auto text-center">
+                                <img src="${post.image}" class="w-100 " style="border-radius: 10px ; height: 200px;" alt="this post without image" >
+                            </div>    
                             <p class="mt-2" style="color: grey;">${post.created_at}</p>
                             <h5>${postTitle}</h5>
                             <p>${post.body}</p>

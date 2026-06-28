@@ -248,8 +248,8 @@ function showAlert(message,type='success')
             appendAlert(message, type)
                     //hide alert
         setTimeout(()=>{
-             //todo      // const alert = bootstrap.Alert.getOrCreateInstance('#success-alert')
-                    //alert.close()  
+                   const alert = bootstrap.Alert.getOrCreateInstance('#success-alert')
+                    alert.close()  
             },2000)    
                 
     }
